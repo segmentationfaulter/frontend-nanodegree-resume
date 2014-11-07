@@ -1,7 +1,12 @@
+// saves the data in variables
+var name = "MUUHAMMAD SAQIB";
+var role = "Web Developer";
+
 // replaces the placehoders in helper.js file
-var formattedName = HTMLheaderName.replace("%data%", "MUHAMMAD SAQIB");
-var formattedRole = HTMLheaderRole.replace("%data%", "Web Developer");
+var formattedName = HTMLheaderName.replace("%data%", name);
+var formattedRole = HTMLheaderRole.replace("%data%", role);
 
 // appends or prepends the formatted html in index.html
-$("#header").append(formattedName);
-$("#header").append(formattedRole);
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
